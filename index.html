@@ -1,0 +1,195 @@
+<!-- This indicates comment -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            padding: 4rem 0;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: 0 auto 1rem;
+            background: #ddd;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            margin-top: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: white;
+            color: #667eea;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Replace with your image -->
+            <div class="profile-img"></div>
+            <h1>Your Name</h1>
+            <p class="tagline">Data Scientist | Web Developer | Researcher</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </div>
+        </header>
+        
+        <div class="content">
+            <section class="section">
+                <h2>About Me</h2>
+                <p>Hello! I'm a passionate developer/researcher with expertise in data science, web development, and material flow analysis. I love creating meaningful projects that solve real-world problems.</p>
+            </section>
+            
+            <section class="section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Material Flow Analysis</h3>
+                        <p>Python-based system for tracking material flows with version control.</p>
+                        <a href="https://github.com/yourusername/material-flow-accounts">View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p>Interactive dashboard for environmental data analysis.</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Research Publications</h3>
+                        <p>Collection of my academic research and publications.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+              <!--  <h2>Skills</h2> -->
+              <!--  <p><strong>Programming:</strong> Python, JavaScript, R, SQL</p> -->
+             <!--   <p><strong>Data Science:</strong> Pandas, NumPy, Matplotlib, Machine Learning</p>-->
+              <!--  <p><strong>Web Development:</strong> HTML, CSS, React, Node.js</p> -->
+              <!-- <p><strong>Tools:</strong> Git, Docker, AWS, Tableau</p> -->
+            </section>
+            
+            <section class="section">
+                <h2>Contact</h2>
+                <p>Feel free to reach out for collaborations or just to say hello!</p>
+                <p>Email: shel.bogr@example.com</p>
+            </section>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Shelly Bogra. Built with GitHub Pages.</p>
+        </footer>
+    </div>
+</body>
+</html>
