@@ -201,6 +201,23 @@
                  <!--        <a href= "">2020 </a> -->
                  <!--        <a href=  "https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.70059"> 2025 </a> -->
                     </div>
+
+                    <div class="counter">
+        Visits: <span id="visitCount">0</span>
+    </div>
+
+    <script>
+        // Simple localStorage-based counter
+        function updateCounter() {
+            let count = localStorage.getItem('pageVisits');
+            count = count ? parseInt(count) + 1 : 1;
+            localStorage.setItem('pageVisits', count);
+            document.getElementById('visitCount').textContent = count;
+        }
+        
+        // Update counter when page loads
+        window.addEventListener('load', updateCounter);
+    </script>
                     
                 </div>
             </section>
